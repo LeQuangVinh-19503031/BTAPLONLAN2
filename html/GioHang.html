@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="../Css/edtit.css">
+    <link rel="stylesheet" href="../BS4/css/bootstrap.min.css">
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    <script src="../BS4/js/bootstrap.min.js"></script>
+    <script src="../BS4/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="row w-100 bg" style="padding: 0 150px; position: fixed; z-index: 999999;">
+
+        <div class="row col-sm-12" id="header">
+            <div class="justify-content-between w-100" id="header2" style="display: flex;">
+
+                <a href="../index.html" class="col-sm-2 d-flex justify-content-center align-items-center">
+                    <img src="../img/A__3_-removebg-preview.png" alt="" class="w-75">
+                </a>
+
+                <div class="d-flex justify-content-between col-sm-6">
+                    <div class="d-flex align-items-center">
+                        <a href="./Register.html" class="btn mr-1 dk">
+                            Đăng ký
+                        </a>
+
+                        <!-- Làm thêm modal đăng nhập -->
+                        <button type="button" class="btn dn" data-toggle="modal" data-target="#staticBackdrop">
+                            Đăng nhập
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-login">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Đăng nhập</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-warning" type="button"
+                                                    id="button-addon2">Tài khoản</button>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Username"
+                                                aria-label="Username" aria-describedby="button-addon2">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-warning" type="button"
+                                                    id="button-addon2">Mật khẩu</button>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Password"
+                                                aria-label="Password" aria-describedby="button-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Đăng nhập</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="" class="btn-cart mr-0 d-flex justify-content-between">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bag-check icon-cart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg>
+                        <p class="soluongcart">3</p>
+                    </div>
+                    <form class="navbar form-inline nava-search">
+                        <input class=" form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="icon-search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-search " viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
+                    </form>
+
+                </div>
+            </div>
+            <ul id="header-menu" class="menu d-flex align-items-center w-100"
+                style="list-style: none; justify-content: space-around;">
+                <li class="nav-item">
+                    <a class="nav-link " href="../index.html">TRANG CHỦ</a>
+                </li>
+
+                <li class="nav-item main-menu">
+                    <a class="nav-link dropdown-toggle">THƯƠNG HIỆU</a>
+                    <div class="sub-menu">
+                        <a class="dropdown-item" href="../index.html" id="nhan-oppo">OPPO</a>
+                        <a class="dropdown-item" href="../index.html" id="nhan-iphone">IPHONE</a>
+                        <a class="dropdown-item" href="../index.html" id="nhan-samsung">SAMSUNG</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../index.html" id="nhan-all">Tất cả thương hiệu</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Insurance.html">CHÍNH SÁCH BẢO HÀNH</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./GioiThieu.html">GIỚI THIỆU</a>
+                </li>
+
+            </ul>
+
+            <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function () {
+                    var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("header2").style.display = 'flex';
+                    } else {
+                        document.getElementById("header2").style.display = 'none';
+                    }
+                    prevScrollpos = currentScrollPos;
+                }
+            </script>
+
+        </div>
+    </header>
+    <section class="alert alert-success" style="padding: 180px; padding-bottom: 0;">
+      
+            <div class="col alert bg-danger btn btn-outline-warning d-flex justify-content-between align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="col-sm-1">
+                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M0 24C0 10.75 10.75 0 24 0H96C107.5 0 117.4 8.19 119.6 19.51L121.1 32H312V134.1L288.1 111C279.6 101.7 264.4 101.7 255 111C245.7 120.4 245.7 135.6 255 144.1L319 208.1C328.4 218.3 343.6 218.3 352.1 208.1L416.1 144.1C426.3 135.6 426.3 120.4 416.1 111C407.6 101.7 392.4 101.7 383 111L360 134.1V32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24V24zM224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464zM416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464z" />
+                </svg>
+                <h2> GIỎ HÀNG</h2>
+            </div>
+            <div class="alert alert-dark">
+                <p class="text-center" style="font-size: 30px; min-height: 500px;">[ Giỏ hàng rỗng ]</p>
+            </div>
+     
+    </section>
+    <footer class="container col-sm-12 bg-footer">
+        <div class="container">
+            <div class="row text-left">
+                <div class="col btn">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">THƯƠNG HIỆU</h6>
+                    <ul class="text-left nav-link" style="list-style: none;">
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">OPPO</a></li>
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">XIAOME</a></li>
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">IPHONE</a></li>
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">Tất cả thương hiệu</a></li>
+                    </ul>
+                </div>
+                <div class="col btn">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">GIỚI THIỆU THÀNH VIÊN VÀ WEBSITE</h6>
+                    <ul class="text-left nav-link" style="list-style: none;">
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Thành viên</a>
+                        </li>
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Website</a>
+                        </li>
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Giảng viên</a>
+                        </li>
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Header</a></li>
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Section</a>
+                        </li>
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Footer</a></li>
+
+                    </ul>
+                </div>
+                <div class="col btn ">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">CHÍNH SÁCH BẢO HÀNH</h6>
+                    <ul class="text-left" style="list-style: none;">
+                        <li class="text-left"><a href="./Insurance.html" class="nav-link text-dark">Đổi mới miễn
+                                phí</a></li>
+                        <li class="text-left"><a href="./Insurance.html" class="nav-link text-dark">Bảo hành 12
+                                tháng</a></li>
+                        <li class="text-left"><a href="./Insurance.html" class="nav-link text-dark">Chính sách bảo
+                                hành</a></li>
+                    </ul>
+                </div>
+                <div class="col btn ">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">TRANG CHỦ</h6>
+                    <ul class="text-left" style="list-style: none;">
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">Đăng ký</a></li>
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">Đăng nhập</a></li>
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">Tìm kiếm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="alert text-center" style="color: black; font-weight: lighter;">© 2022 - Bản Quyền Thuộc Về Lê Quang
+            Vinh Và Nguyễn Tuấn Anh</p>
+
+    </footer>
+</body>
+
+</html>

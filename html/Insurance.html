@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách bảo hành</title>
+    <link rel="stylesheet" href="../Css/edtit.css">
+    <link rel="stylesheet" href="../Css/Insurance.css">
+    <link rel="stylesheet" href="../BS4/css/bootstrap.min.css">
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    <script src="../BS4/js/bootstrap.bundle.min.js"></script>
+    <script src="../BS4/js/bootstrap.min.js"></script>
+    <script src="../JavaScripts/Insurance.js"></script>
+    <script src="../JavaScripts/Register.js"></script>
+    <style>
+
+    </style>
+
+
+</head>
+
+<body>
+    <header class="row-cols-12 w-100 bg" style="padding: 0 150px; position: fixed; z-index: 999999;">
+
+        <div class="row col-sm-12" id="header">
+            <div class="justify-content-between w-100" id="header2" style="display: flex;">
+                <div class="col-sm-2">
+                    <a href="../index.html" class="  d-flex justify-content-center align-items-center">
+                        <img src="../img/A__3_-removebg-preview.png" alt="" class="w-75">
+                    </a>
+                </div>
+                <div class="d-flex justify-content-between col-sm-6">
+                    <div class="d-flex align-items-center">
+                        <a href="./Register.html" class="btn mr-1 dk">
+                            Đăng ký
+                        </a>
+
+                        <!-- Làm thêm modal đăng nhập -->
+                        <button type="button" class="btn dn" data-toggle="modal" data-target="#staticBackdrop">
+                            Đăng nhập
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-login">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Đăng nhập</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-warning" type="button"
+                                                    id="button-addon2">Tài khoản</button>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Username"
+                                                aria-label="Username" aria-describedby="button-addon2">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-warning" type="button"
+                                                    id="button-addon2">Mật khẩu</button>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Password"
+                                                aria-label="Password" aria-describedby="button-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Đăng nhập</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="./GioHang.html" id="" class="btn-cart mr-0 d-flex justify-content-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-bag-check icon-cart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg>
+                        <p class="soluongcart">3</p>
+                    </a>
+                    <form class="navbar form-inline nava-search">
+                        <input class=" form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="icon-search" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-search " viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
+                    </form>
+
+                </div>
+            </div>
+            <ul id="header-menu" class="menu d-flex align-items-center w-100"
+                style="list-style: none; justify-content: space-around;">
+                <li class="nav-item">
+                    <a class="nav-link " href="../index.html">TRANG CHỦ</a>
+                </li>
+
+                <li class="nav-item main-menu">
+                    <a class="nav-link dropdown-toggle">THƯƠNG HIỆU</a>
+                    <div class="sub-menu">
+                        <a class="dropdown-item" href="../index.html" id="nhan-oppo">OPPO</a>
+                        <a class="dropdown-item" href="../index.html" id="nhan-iphone">IPHONE</a>
+                        <a class="dropdown-item" href="../index.html" id="nhan-samsung">SAMSUNG</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../index.html" id="nhan-all">Tất cả thương hiệu</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Insurance.html">CHÍNH SÁCH BẢO HÀNH</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./GioiThieu.html">GIỚI THIỆU</a>
+                </li>
+
+            </ul>
+
+            <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function () {
+                    var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("header2").style.display = 'flex';
+                    } else {
+                        document.getElementById("header2").style.display = 'none';
+                    }
+                    prevScrollpos = currentScrollPos;
+                }
+            </script>
+
+        </div>
+    </header>
+    <section class="">
+        <div class="Thankyou">
+            <p>Chào mừng quý khách đến với trang chính sách bảo hành</p>
+            <p>Dưới đây là thông tin chi tiết và các sách bảo hành của các loại điện thoại.
+                <a href="../Html/PhoneWeb.html">Web Anh Vĩ</a> luôn nỗ lực hết mình để giúp quý khách cảm thấy hài lòng
+                và
+                tin tưởng khi mua hàng
+            </p>
+            <p>Chân thành cảm ơn và mong được tiếp tục phục vụ Quý Khách!</p>
+        </div>
+        <!-- Các chính sách bảo hành và nội dung của nó-->
+        <div class="col-sm-12 TD_csbh">
+            <h2>Chính sách bảo hành</h2>
+        </div>
+        <div class="menu_csbh">
+            <div class="col_left">
+                <div class="menu_item">
+                    <div class="btn_c1">
+                        <button onclick="showContent(this ,'doimoi')">I. Đổi điện thoại mới miễn phí</button>
+                    </div>
+                </div>
+                <div class="menu_item">
+                    <div class="btn_c1">
+                        <button onclick="showContent(this ,'bhtc_DT')">II. Chính
+                            sách bảo hành tiêu chuẩn</button>
+                    </div>
+                    <div class="btn_c2" style="display:none;">
+                        <div><button class="item_c2" onclick="showContent(this ,'bhtc_DT')">1. Điện thoại</button></div>
+                        <div><button class="item_c2" onclick="showContent(this ,'bhtc_PK')">2. Phụ kiện</button></div>
+                    </div>
+                </div>
+                <div class="menu_item">
+                    <div class="btn_c1">
+                        <button onclick="showContent(this ,'MR1d1')">III. Chính
+                            sách bảo hành mở rộng</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col_right">
+                <!--Nội dung chính sách bảo hành đổi mới-->
+                <div id="doimoi" class="text_item">
+                    <p>
+                        Khi mua sản phẩm tại AnhVi.com, khách hàng hoàn toàn yên tâm với sản phẩm chính hãng, được bảo
+                        hành chính thức tại hãng và ngoài ra có thêm chính sách đổi mới miễn phí lên tới 30 ngày.
+                    </p>
+                    <div class="ND_csbh">
+                        <p>
+                            Thời gian đổi mới: 30 ngày <a class="text-danger" href="#DK">*</a>
+                        </p>
+                        <p>
+                            Quy định nhập, trả lại:
+                        <ul>
+                            <li>Trong 30 ngày đầu nhập lại máy, trừ phí 20% trên giá hiện tại(hoặc giá mua nếu giá mua
+                                thấp hơn giá hiện tại)</li>
+                            <li>Sau 30 ngày nhập lại máy theo giá thoả thuận</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <p>
+                        <a name="DK"></a>
+                        (*): Chỉ áp dụng cho lỗi phần cứng từ phía nhà sản xuất.<br>
+                    <p>Lỗi từ phía Nhà sản xuất là các lỗi bao gồm: Lỗi nguồn, lỗi trên mainboard, ổ cứng, màn hình và
+                        các linh kiện phần cứng bên trong.</p>
+                    <p>Lỗi điểm chết màn hình : màn hình có từ 3 điểm chết trở lên hoặc 1 điểm chết có kích thước lớn
+                        hơn 1mm đối với điện thoại và từ 5 điểm chết trở lên đối với laptop, màn hình rời.</p>
+                    <p>Các lỗi từ NSX cần được xác định bởi trung tâm bảo hành chính hãng hoặc trung tâm bảo hành uỷ
+                        quyền.</p>
+                    </p>
+                    <p class="mb-2">
+                        <strong class="udl_strong">
+                            Điều kiện đổi trả:
+                        </strong>
+                    <ul>
+                        <li>Máy: Như mới, không xước xát, không dán decal, hình trang trí</li>
+                        <li>Máy cũ: có tình trạng sản phẩm như lúc mới mua</li>
+                        <li>Hộp: Như mới, không móp méo, rách, vỡ, bị viết, vẽ, quấn băng dính, keo; có Serial/IMEI trên
+                            hộp trùng với thân máy.</li>
+                        <li>Phụ kiện và quà tặng: Còn đầy đủ, nguyên vẹn, không móp méo xước xát hoặc bị hư hại trong
+                            quá trình sử dụng.</li>
+                        <li>Tài khoản: Máy đã đã được đăng xuất khỏi tất cả các tài khoản như: iCloud, Google Account,
+                            Mi Account…</li>
+                    </ul>
+                    </p>
+                </div>
+                <!--Nội dung phần điện thoại-->
+                <div id="bhtc_DT" class="text_item" style="display:none;">
+                    <p>Các sản phẩm chính hãng, Quý khách có thể tới các TTBH chính hãng để được tiếp nhận gửi máy bảo
+                        hành chính hãng.</p>
+                    <p>Yêu cầu tiếp nhận bảo hành tùy theo quy định của từng hãng, chi tiết có trong bảng sau:</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="success">
+                                <th><strong>Sản phẩm</strong></th>
+                                <th><strong>Thời gian bảo hành</strong></th>
+                                <th><strong>Quyền lợi bảo hành</strong></th>
+                                <th><strong>Địa chỉ bảo hành</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Máy mới</td>
+                                <td>12 tháng(hoặc dài hơn theo quy định của hãng)</td>
+                                <td>Theo chính sách về quyền lợi bảo hành của từng hãng</td>
+                                <td>Trung tâm bảo hành chính hãng của từng hãng</td>
+                            </tr>
+                            <tr>
+                                <td>Máy đã kích hoạt</td>
+                                <td>12 tháng = Thời gian bảo hành còn lại tại hãng + Bảo hành tại web Anh Vĩ</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            Theo quyền lợi bảo hành của hãng trong thời gian được hãng bảo hành
+                                        </li>
+                                        <li>
+                                            Sửa chữa, thay thế linh kiện trong thời gian bảo hành còn lại tại shop.
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Trung tâm bảo hành chính hãng của từng hãng</li>
+                                        <li>Shop Anh Vĩ</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Máy cũ</td>
+                                <td>6 tháng (hoặc ngắn hơn tùy từng snar phẩm)</td>
+                                <td>Sửa chữa, thay thế linh kiện</td>
+                                <td>Shop Anh Vĩ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li style="padding:0px 0px 12px 0px">Trong thời gian đợi bảo hành - sửa chữa, khách hàng sẽ được
+                            hỗ trợ miễn phí một điện thoại khác để sử dụng.</li>
+                        <li style="padding:0px 0px 12px 0px">Khách hàng trả lại máy đã mượn sau khi nhận lại máy của
+                            mình.</li>
+                    </ul>
+
+                </div>
+                <!--Nội dung phần phụ kiện-->
+                <div id="bhtc_PK" class="text_item">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="success">
+                                <th style="text-align: center;"><strong>Sản phẩm</strong></th>
+                                <th style="text-align: center;"><strong>Tình trạng</strong></th>
+                                <th style="text-align: center;"><strong>Thời gian</strong></th>
+                                <th style="text-align: center;"><strong>Quyền lợi bảo hành(lỗi từ phía nhà sản
+                                        xuất)</strong></th>
+                                <th style="text-align: center;"><strong>Địa điểm</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3" style="text-align: left; vertical-align: middle;">Phụ kiện</td>
+                                <td style="text-align: left;">Trên 1 triệu </td>
+                                <td style="text-align: center;"><span>12 tháng</span></td>
+                                <td style="vertical-align: middle;">Sửa chữa, thay thế linh kiện </td>
+                                <td style="text-align: center; vertical-align: middle;">TTBH hãng</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">Dưới 1 triệu</td>
+                                <td style="text-align: center;">12 tháng</td>
+                                <td rowspan="2" style="vertical-align: middle;">1 đổi 1 tất cả các lỗi</td>
+                                <td rowspan="6" style="text-align: center; vertical-align: middle;">CellphoneS</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">Cũ</td>
+                                <td style="text-align: center;">30 ngày</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: left;">Dán chống va đập</td>
+                                <td style="text-align: center;">30 ngày</td>
+                                <td rowspan="2">- 1 đổi 1 tất cả các lỗi<br>- Dán mới lần 2 được giảm 30%.<br>- Dán PPF
+                                    chỉ được thực hiện ở cửa hàng.<br>(Không áp dụng bảo hành cho đơn hàng giao tại nhà)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: left;">Dán cường lực</td>
+                                <td style="text-align: center;">30 ngày</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: left;">Quà tặng (của hãng)</td>
+                                <td style="text-align: center;">30 ngày</td>
+                                <td rowspan="2" style="vertical-align: middle;">1 đổi 1 tất cả các lỗi</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: left;">Phụ kiện đi kèm theo Phụ kiện</td>
+                                <td style="text-align: center;">3 tháng</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: left;">Âm thanh</td>
+                                <td style="text-align: center;">12 tháng</td>
+                                <td>Sửa chữa, thay thế linh kiện</td>
+                                <td>TTBH hãng</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: left;">Bao da, ốp lưng</td>
+                                <td colspan="3" style="text-align: center;">Không bảo hành</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" style="text-align: left;"><strong>Đặc biệt:</strong><br>-&ensp;Phụ kiện
+                                    Anker - Pisen: 18 tháng<br>-&ensp;Phụ kiện Aukey - Energizer - Totolink - Tp-Link:
+                                    24 tháng<br>-&ensp;Thẻ nhớ - USB: 24 tháng</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--Điều kiện bảo hành-->
+                    <div>
+                        <p>
+                            <strong><em>
+                                    <span style="text-decoration: underline;">
+                                        <strong><em>
+                                                <span>Điều kiện bảo hành:</span>
+                                            </em></strong>
+                                    </span>
+                                </em></strong>
+                        </p>
+                        <p><strong><em>Đủ điều kiện:</em></strong></p>
+                        <ul>
+                            <li>Hư hỏng được xác định do lỗi kỹ thuật hoặc do lỗi của nhà sản
+                                xuất.</li>
+                            <li>Sản phẩm đang trong thời hạn bảo hành, có tem bảo hành của
+                                nhà phân phối/ hãng sản xuất.</li>
+                            <li>Đối với sản phẩm bảo hành cần số Serial trên hộp: sản
+                                phẩm phải còn đầy đủ hộp.</li>
+                            <li>Sản phẩm không trầy xước, cấn móp, bể, vỡ, biến dạng so với
+                                ban đầu.</li>
+                            <li>Dùng đúng nguồn điện, không cháy nổ, phồng tụ; không bị ô xy hoá do đặt trong môi trường
+                                ẩm ướt…</li>
+                            <li>Chưa can thiệp vào phần cứng (tự ý tháo dỡ, sửa chữa…).</li>
+                        </ul>
+                        <p><strong><em>Không đủ điều kiện: </em></strong></p>
+                        <ul>
+                            <li>Hết thời hạn bảo hành.</li>
+                            <li>Không có tem bảo hành của Công ty/ nhà phân phối/ hãng sản xuất; hoặc có nhưng tem bảo
+                                hành
+                                đó không hợp lệ (bị rách, bị tẩy xoá, sửa chữa, mờ không đọc được, bong/ tróc…). </li>
+                            <li>Bị tác động vật lý làm trầy xước, cong vênh, rạn nứt, bể vỡ trong quá trình sử dụng.
+                            </li>
+                            <li> Bị hư hỏng do tự ý thảo mở, sửa chữa, thay đổi cấu trúc sản phẩm bên trong. </li>
+                            <li>Bị hư hỏng, chập, cháy do sử dụng sai mục đích, tự ý tháo, lắp đặt không tuân theo các
+                                hướng
+                                dẫn sử dụng đính kèm theo sản phẩm.</li>
+                            <li> Bị hư hỏng do côn trùng xâm nhập (chuột, gián, kiến, mối…). </li>
+                            <li>Bị hư hỏng do thiên tai, hỏa hoạn, lụt lội, sét đánh, rỉ sét, hao mòn do môi trường gây
+                                ra.
+                            </li>
+                            <li>Sản phẩm sử dụng với mục đích sản xuất, khai thác tiền điện tử.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Phần mở rộng 1 đổi 1-->
+                <div id="MR1d1" class="text_item">
+                    <p><span style="font-size: small;"><strong>1.&nbsp;</strong><strong>Sản phẩm áp dụng:</strong> Điện
+                            thoại mới/ cũ.</span><br><span
+                            style="font-size: small;"><strong>2.&nbsp;</strong><strong>Thời gian
+                                bảo hành:</strong> 06 tháng/12 tháng</span><br><span
+                            style="font-size: small;"><strong>3.&nbsp;</strong><strong>Điều kiện bảo
+                                hành:</strong></span></p>
+                    <h6>a) Sản phẩm bị lỗi do nhà sản xuất.</h6>
+                    <p><span style="font-size: small;">- Việc kiểm tra và xác định lỗi do nhà sản xuất được thực hiện
+                            bởi
+                            Trung Tâm Bảo Hành Điện Thoại của nhà sản xuất.</span></p>
+                    <p><span style="font-size: small;"><strong>1.&nbsp;</strong><strong>Quyền lợi bảo
+                                hành:</strong></span></p>
+                    <p><span style="font-size: small;"><strong>1.1&nbsp;Đổi sản phẩm sau khi sản phẩm được kiểm tra và
+                                xác định đúng bị lỗi phần cứng phát sinh từ phía nhà sản xuất:</strong></span></p>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr class="success">
+                                <td style="text-align: center;">
+                                    <p><span style="font-size: small;"><strong>Phạm vi bảo hành</strong></span></p>
+                                </td>
+                                <td style="text-align: center;">
+                                    <p><span style="font-size: small;"><strong>Bảo hành tiêu chuẩn</strong></span></p>
+                                </td>
+                                <td style="text-align: center;">
+                                    <p><span style="font-size: small;"><strong>BH 1 đổi 1 - VIP</strong></span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-size: small;">Mainboard (lỗi nguồn), ổ cứng</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-size: small;">-&nbsp;&nbsp;&nbsp; Bảo hành sửa chữa</span></p>
+                                    <p><span style="font-size: small;">-&nbsp;&nbsp;&nbsp; Riêng iPhone mới: 1 đổi 1
+                                            theo quy định</span></p>
+                                    <p><span style="font-size: small;">-&nbsp;&nbsp;&nbsp; Sản phẩm đổi là sản phẩm tồn
+                                            kho/chưa, đã kích hoạt/ cũ</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-size: small;">1 đổi 1</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-size: small;">Màn hình cảm ứng (&gt;= 3 điểm chết hoặc kích
+                                            thước điểm chết &gt;= 1mm)</span></p>
+                                </td>
+                                <td rowspan="2">
+                                    <p><span style="font-size: small;">Bảo hành sửa chữa</span></p>
+                                </td>
+                                <td rowspan="2">
+                                    <p><span style="font-size: small;">1 đổi 1</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-size: small;">Các lỗi linh kiện: camera (trước/sau), loa
+                                            (trong/ngoài), chip wifi, mic thoại, đèn flash …</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-size: small;">Lỗi chân sim, chân khe cắm thẻ nhớ, chân
+                                            sạc</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-size: small;">Không bảo hành</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-size: small;">Bảo hành sửa chữa</span></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><span style="font-size: small;">Pin và phím bấm vật lý bên ngoài hư hỏng, không
+                                            hoạt động (âm lượng, phím nguồn…)</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-size: small;">Bảo hành sửa chữa 3 Tháng</span></p>
+                                    <p><span style="font-size: small;">(Pin iPhone cũ: 6 tháng)</span></p>
+                                </td>
+                                <td>
+                                    <p><span style="font-size: small;">1 đổi 1 trong 12 Tháng</span></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><strong>1.2&nbsp;</strong>Sản phẩm đổi bảo hành (A) là sản phẩm giống với với sản phẩm Khách hàng
+                        mua ban đầu tại shop Anh Vĩ.</p>
+                    <p>Ví dụ: Khách hàng mua sản phẩm A -&gt; Nếu xảy ra lỗi từ phía nhà sản xuất và sản phẩm A có tham
+                        gia gói Bảo hành 1 đổi 1 - VIP -&gt; Khách hàng sẽ được đổi bảo hành sản phẩm là A.</p>
+                    <p><strong>2&nbsp;</strong>Thời gian xử lý:</p>
+                    <p>-Trong vòng 24h kể từ thời điểm tiếp nhận sản phẩm.</p>
+                    <p>-Với các trường hợp sản phẩm trong tình trạng không hoạt động, sản phẩm không thể kiểm tra, xác
+                        minh được số series, IMEI thì shop Anh Vĩ cần 05 - 07 ngày để làm việc với hãng sản
+                        xuất để xác minh.</p>
+                    <p><strong>3&nbsp;</strong>Trường hợp shop Anh Vĩ có sản phẩm để đổi cho Khách hàng nhưng
+                        Khách hàng muốn đổi sang sản phẩm khác thì phải đổi sang sản phẩm có giá bán cao hơn sản phẩm
+                        hiện tại (A) và chịu phí 10% giá trị sản phẩm khi nhập lại:</p>
+                    <p style="text-align: center;"><strong>Giá nhập lại sản phẩm = Giá bán hiện tại sản phẩm (A) x 90%
+                        </strong></p>
+                    <p style="text-align: center;"><em>(trong đó: giá bán hiện tại sản phẩm (A) nhỏ hơn hoặc bằng giá
+                            mua sản phẩm ban đầu, trường&nbsp;&nbsp;&nbsp;hợp giá bán hiện tại sản phẩm (A) lớn hơn giá
+                            mua sản phẩm ban đầu thì giá bán hiện tại sản&nbsp; phẩm được tính bằng giá mua ban
+                            đầu).</em></p>
+                    <p><strong>3.1&nbsp;</strong>Trong trường hợp sản phẩm được đổi phát sinh lỗi tiếp (thuộc phạm vi
+                        bảo hành), shop&nbsp;vẫn sẽ bảo hành cho sản phẩm theo chế độ 1 đổi 1 trong thời gian bảo
+                        hành còn lại.</p>
+                    <p><strong>3.2&nbsp;</strong>Với các trường hợp không có sản phẩm để đổi ngay, shop Anh Vĩ cam kết
+                        thời gian xử lý đổi sản phẩm tối đa 07 ngày làm việc (trừ 7 + CN).&nbsp;Sau thời gian này, nếu
+                        không có sản phẩm đổi cho khách hàng, Anh Vĩ sẽ:</p>
+                    <p><strong>4&nbsp;</strong>Đổi cho khách hàng một sản phẩm khác cùng thương hiệu, dòng sản phẩm
+                        (ví dụ dòng Note Series, S Series với Samsung hoặc dòng Pro/Pro max với Apple) và có chất lượng
+                        tương đương với sản phẩm khách hàng mua ban đầu tại shop</p>
+                    <p><strong>4.1&nbsp;</strong>Nhập lại cho khách hàng theo công thức sau để đổi (bù phí) sang sản
+                        phẩm khác:</p>
+                    <p><strong>Giá trị của sản phẩm</strong> <strong>tại thời điểm bảo hành = Giá mua sản phẩm x (100% -
+                            3% x Số tháng sử dụng sản phẩm) </strong></p>
+                    <p style="text-align: center;">(Số tháng sử dụng = Tháng tại thời điểm đổi sản phẩm &nbsp;- Tháng
+                        tại thời điểm mua sản phẩm )</p>
+                    <p>Trường hợp nhập sản phẩm, khách hàng phải có hộp, phụ kiện.
+                        Anh Vĩ sẽ trừ phí 5% giá trị của sản phẩm tại thời điểm bảo hành/món (hộp/phụ kiện)</p>
+                    <p><strong>5&nbsp;</strong>Dịch vụ bảo hành này không áp dụng đối với hộp và phụ kiện kèm theo
+                        như: tai nghe, sạc, cáp...</p>
+                    <p><strong>6&nbsp;</strong>Khách hàng có thể chuyển nhượng quyền sở hữu của sản phẩm và gói
+                        <strong>Bảo hành 1 đổi 1 VIP</strong> trong thời gian bảo hành.
+                    </p>
+                    <p><strong><span style="text-decoration: underline;">Lưu ý: </span></strong></p>
+                    <p>- Nếu ngoại hình sản phẩm cấn, móp, cong, nứt, gãy thì Khách hàng không được hưởng quyền lợi của
+                        gói bảo hành này.</p>
+                    <p>- Cơ sở xác định sản phẩm lỗi pin: Có giấy xác nhận lỗi pin từ Trung Tâm Bảo Hành
+                        hãng<strong> có cơ sở xác định lỗi pin như sau:<strong><em>
+                                </em></strong>&nbsp;&nbsp;</p>
+                    <ul>
+                        <li>Lỗi pin hao nhanh: tiêu hao <strong>&gt; 20%/giờ</strong> khi xem Youtube với: Wifi, mức âm
+                            lượng <strong>50%</strong>; mức pin ban đầu <strong>100%</strong>; độ sáng màn hình
+                            <strong>50%</strong>.
+                        </li>
+                        <li>Lỗi pin chai: Mức độ chai pin <strong>&gt;= 30% </strong>đo bằng ứng dụng 3u Tools.</li>
+                    </ul>
+                    <p>- Cơ sở xác định sản phẩm lỗi phím bấm vật lý: Thử kiểm tra nhấn phím bấm vật lý trong <strong>10
+                            lần liên tiếp</strong> và phím bấm không hoạt động (không phản hồi).</p>
+
+                    <!--Phần rơi vỡ, ngấm nước-->
+                    <h6>b) Đối với sản phẩm bị tác động của ngoại lực gây vỡ hoặc bị ngấm nước,
+                        ngấm
+                        các chất lỏng khác dẫn đến sản phẩm không hoạt động bình thường.</h6>
+                    <p><span style="font-size: small;"><strong>4. Quyền lợi bảo hành:</strong></span></p>
+                    <p><span style="font-size: small;"><strong>4.1&nbsp;</strong>Trường hợp gặp các vấn đề về lỗi
+                            phần
+                            cứng (yêu cầu sản phẩm chưa từng qua sửa chữa hư hỏng do rơi vỡ, ngấm nước) phát sinh từ
+                            phía nhà sản xuất thì sản phẩm sẽ được bảo hành theo quyền lợi của gói <strong>Bảo hành
+                                1
+                                đổi 1 VIP</strong> (tham khảo quyền lợi bảo hành ở mục I)
+                        </span></p>
+                    <p><span style="font-size: small;"><strong>4.2&nbsp;</strong>Trường hợp gặp các vấn đề
+                            <strong>hư
+                                hỏng do rơi vỡ, ngấm nước </strong>được Trung Tâm Bảo Hành Điện Thoại Vui - Đối tác
+                            sửa
+                            chữa các sản phẩm của Cellphones - tiến hành <strong>sửa chữa/ thay thế linh kiện
+                            </strong>(hướng xử lý tùy theo mức độ từng trường hợp) cho khách hàng. Thời gian xử lý
+                            từ 07
+                            - 14 ngày tùy thuộc vào mức độ hư hỏng của sản phẩm và tình trạng linh kiện.</span></p>
+                    <p><span style="font-size: small;"><strong>4.3&nbsp;</strong>Dịch vụ sửa chữa được thực hiện bởi
+                            Trung Tâm Bảo Hành Điện Thoại Vui - Đối tác sửa chữa các sản phẩm của Cellphones.com.vn
+                            với
+                            linh kiện thay thế được bảo hành theo thời hạn còn lại của gói dịch vụ bảo hành.</span>
+                    </p>
+                    <p><span style="font-size: small;"><strong>4.4&nbsp;</strong>Với mỗi trường hợp xảy ra hư hỏng
+                            do
+                            rơi vỡ, ngấm nước</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- Phần chú ý sao lưu dữ liệu -->
+        <div class="backup_note">
+            <p>
+                <strong><span>Về dữ liệu trên điện thoại để tiếp nhận điện thoại bảo hành của quý khách
+                        nhanh và tốt hơn</span></strong>
+            </p>
+            <ul>
+                <li>
+                    Gỡ bỏ hoặc Cung cấp mật khẩu màn hình.
+                </li>
+                <li>
+                    Thoát tất cả tài khoản bảo mật cá nhân như: Apple iCloud, Samsung Account, MiCloud,
+                    Google, .v.v…
+                </li>
+                <li>
+                    Quý khách hàng vui lòng chủ động tự sao lưu dữ liệu. (
+                    <a class="text-danger"
+                        href="https://trainghiemso.vn/cach-sao-luu-dien-thoai-android-mien-phi-voi-google-one/">Hướng
+                        dẫn chi tiết với Android</a> |
+                    <a class="text-danger" href="https://canhrau.com/cach-sao-luu-du-lieu-iphone/">Hướng dẫn
+                        chi tiết với IOS</a>)
+                </li>
+            </ul>
+            <p>
+                Chúng tôi hoàn toàn ý thức được tầm quan trọng của dữ liệu của khách hàng và luôn cố gắng
+                hết sức để <strong>hỗ trợ-hướng dẫn</strong> khách hàng trong việc sao lưu dữ liệu. Tuy
+                nhiên, cửa hàng <strong>không chịu trách nhiệm về việc mất bất cứ dữ liệu</strong> trong mọi
+                trường hợp.
+            </p>
+        </div>
+    </section>
+
+
+    <!--Phần Quest and answer-->
+    <div class="box_comment">
+        <div class="bc_title">
+            <p>Bạn hỏi shop Anh Vĩ trả lời</p>
+        </div>
+        <div class="Question form-add">
+            <textarea name="c_content" class="comment_content" id="customers_review" cols="200" rows="5"
+                placeholder="Mời quý khách hàng để lại câu hỏi, shop Anh Vĩ sẽ trả lời ngay trong 1h, các câu hỏi sau 22h - 8h sẽ được trả lời vào sáng hôm sau."></textarea>
+            <button type="button" class="btn_send_comment" id="btn-show-modal" data-toggle="modal"
+                data-target="#exampleModalCenter">
+                <i class="fa fa-paper-plane"></i>&nbsp;Gửi
+            </button>
+        </div>
+    </div>
+    <div class="box_comment_show">
+        <div class="persons_comment">
+        </div>
+    </div>
+    <!--Modal comment-->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="text-align:center">THÔNG TIN NGƯỜI GỬI</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-horizontal">
+                        <div class="form-group">
+                            <div id="thongbao" class="text-danger" style="text-align:center"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Name" class="control-label">Họ tên</label>
+                            <div class="col-md-9" style="padding-left:0px">
+                                <input type="text" class="form-control" id="Name"
+                                    placeholder="Họ tên (bắt buộc phải nhập).">
+                                <span id="erroName" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="emptySDT" class="control-label">Số điện thoại</label>
+                            <div class="col-md-9" style="padding-left:0px">
+                                <input type="text" class="form-control" id="emptySDT" placeholder="Nhập số điện thoại"
+                                    maxlength="11">
+                                <span class="text-danger" id="erroemptySDT"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mail" class="control-label">Email</label>
+                            <div class="col-md-9" style="padding-left:0px">
+                                <input type="text" class="form-control" id="mail"
+                                    placeholder="Email (bắt buộc phải nhập)">
+                                <span class="text-danger" id="erroEmail"></span>
+                            </div>
+                        </div>
+                        <button type="button" id="btnSave" class="btn btn-success btn-block">Gửi phản hồi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('ul').toggleClass('active');
+            })
+        })
+        window.addEventListener("click", function () {
+            if (!event.target.matches('#frames-menu')) {
+                $('ul').removeClass('active')
+            }
+        });
+    </script>
+
+    
+        <footer class="col bg-footer" style="padding: 0 150px;">
+
+            <div class="row align-items-start w-100">
+                <div class="col btn">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">THƯƠNG HIỆU</h6>
+                    <ul class="text-left nav-link" style="list-style: none;">
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">OPPO</a></li>
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">XIAOME</a></li>
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">IPHONE</a></li>
+                        <li class="text-left"><a href="" class="nav-link text-dark">Tất cả thương hiệu</a></li>
+                    </ul>
+                </div>
+                <div class="col btn">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">GIỚI THIỆU THÀNH VIÊN VÀ WEBSITE</h6>
+                    <ul class="text-left nav-link" style="list-style: none;">
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Thành viên</a></li>
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Website</a></li>
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Giảng viên</a></li>
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Header</a></li>
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Section</a></li>
+                        <li class="text-left"><a href="./GioiThieu.html" class="nav-link text-dark">Footer</a></li>
+    
+                    </ul>
+                </div>
+                <div class="col btn ">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">CHÍNH SÁCH BẢO HÀNH</h6>
+                    <ul class="text-left" style="list-style: none;">
+                        <li class="text-left"><a href="./Insurance.html" class="nav-link text-dark">Đổi mới miễn
+                                phí</a></li>
+                        <li class="text-left"><a href="./Insurance.html" class="nav-link text-dark">Bảo hành 12
+                                tháng</a></li>
+                        <li class="text-left"><a href="./Insurance.html" class="nav-link text-dark">Chính sách bảo
+                                hành</a></li>
+                    </ul>
+                </div>
+                <div class="col btn ">
+                    <h6 class="alert" style="border-bottom: 1px solid black;">TRANG CHỦ</h6>
+                    <ul class="text-left" style="list-style: none;">
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">Đăng ký</a></li>
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">Đăng nhập</a></li>
+                        <li class="text-left"><a href="../index.html" class="nav-link text-dark">Tìm kiếm</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+            <p class="alert text-center" style="color: black; font-weight: lighter;">© 2022 - Bản Quyền Thuộc Về Lê Quang
+                Vinh Và Nguyễn Tuấn Anh</p>
+    
+        </footer>
+ 
+</body>
+
+</html>
